@@ -1,5 +1,7 @@
 import React from "react";
 import News from "../components/News.jsx";
+import QuranActivity from "../components/QuranActivity.jsx";
+
 import "./Home.css"
 const Home = () => {
   return (
@@ -10,6 +12,7 @@ const Home = () => {
 درمان خود را از قرآن بخواهید و در سختیها از قرآن یاری طلبید و خواسته های خود را به وسیله قرآن طلب کنید و با دوستی قرآن به خدا روی آورید زیرا وسیله ای برای تقرب بندگان به خدا ، بهتر از قرآن وجود ندارد.</p>
       <News />
       {/* سایر بخش‌ها و کامپوننت‌های Home */}
+      <QuranActivity />
     </div>
   );
 };
