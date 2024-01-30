@@ -1,0 +1,39 @@
+/* Header.css */
+.main-header {
+    background-color: #00a896; /* رنگ زمینه سبز فیروزه‌ای */
+    color: #fff; /* رنگ متن با رنگ نوشته‌ها در نظر گرفته شده */
+    padding: 20px 0; /* افزودن حاشیه بالا و پایین به هدر */
+    text-align: center; /* مرتب کردن متن در وسط هدر */
+    width: 100%;
+  }
+  
+  .header-content {
+    max-width: 800px; /* تعیین حداکثر عرض محتوای هدر */
+    margin: 0 auto; /* مرتب کردن محتوا در وسط هدر */
+  }
+  
+  .bismillah {
+    font-size: 18px; /* اندازه متن بسم‌الله */
+  }
+  
+  .main-navbar {
+    margin-top: 10px; /* فاصله بین بسم‌الله و منو */
+  }
+  
+  .main-navbar ul {
+    list-style: none; /* حذف نشانگان لیست منو */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-navbar li {
+    margin: 0 15px; /* فاصله بین آیتم‌های منو */
+  }
+  
+  .quran-verse {
+    margin-top: 20px; /* فاصله بین آیه قرآنی و سایر محتواها */
+    font-size: 16px; /* اندازه متن آیه قرآنی */
+    font-style: italic; /* ایتالیک کردن متن آیه قرآنی */
+  }
+  
