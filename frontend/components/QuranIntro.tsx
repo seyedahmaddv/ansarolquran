@@ -1,4 +1,5 @@
 import { BookOpenIcon, UserGroupIcon, ShieldCheckIcon } from '@heroicons/react/20/solid'
+import Image from 'next/image'
 
 export default function QuranIntro() {
   return (
@@ -39,7 +40,7 @@ export default function QuranIntro() {
 
         {/* تصویر معرفی */}
         <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-          <img
+          <Image
             alt="نمایی از برنامه قرآنی"
             src="/images/نمایی از برنامه قرانی.jpg" // تصویر مناسب خودتو جایگزین کن
             className="w-full max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-300/10"

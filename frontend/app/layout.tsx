@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import './globals.css'
 import { ThemeProvider } from '@/lib/theme';
-import { iranSans } from '@/public/fonts/font';
+
 
 export const metadata: Metadata = {
   title: 'انصارالقرآن | مرکز آموزش و تفسیر قرآن کریم',
