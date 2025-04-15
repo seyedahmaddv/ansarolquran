@@ -79,11 +79,11 @@ export default function Contact() {
   </div>
   <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
     <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">آیا امکان ثبت‌نام آنلاین وجود دارد؟</h3>
-    <p className="text-gray-700 dark:text-gray-300">بله، شما می‌توانید از طریق بخش "ثبت‌نام" در وب‌سایت ما به صورت آنلاین در کلاس‌های مورد نظر خود ثبت‌نام کنید.</p>
+    <p className="text-gray-700 dark:text-gray-300">بله، شما می‌توانید از طریق بخش ثبت‌نام در وب‌سایت ما به صورت آنلاین در کلاس‌های مورد نظر خود ثبت‌نام کنید.</p>
   </div>
   <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
     <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">هزینه شرکت در کلاس‌ها چقدر است؟</h3>
-    <p className="text-gray-700 dark:text-gray-300">هزینه‌ها بسته به نوع و سطح کلاس متفاوت است. برای اطلاع از شهریه دوره‌ها، لطفاً با مرکز تماس بگیرید یا به بخش "دوره‌ها" در وب‌سایت مراجعه کنید.</p>
+    <p className="text-gray-700 dark:text-gray-300">هزینه‌ها بسته به نوع و سطح کلاس متفاوت است. برای اطلاع از شهریه دوره‌ها، لطفاً با مرکز تماس بگیرید یا به بخش دوره‌ها در وب‌سایت مراجعه کنید.</p>
   </div>
 </div>
 </div>
