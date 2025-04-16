@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroSection() {
     
 
@@ -20,10 +22,10 @@ export default function HeroSection() {
                     <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                         به مرکز انصارالقرآن خوش آمدید. با ما در مسیر یادگیری و فهم قرآن کریم همراه شوید.{' '}
-                            <a href="#" className="font-semibold text-indigo-600">
+                            <Link href="#" className="font-semibold text-indigo-600">
                                 <span aria-hidden="true" className="absolute inset-0" />
                                 درباره ما <span aria-hidden="true">&rarr;</span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="text-center">
@@ -34,16 +36,16 @@ export default function HeroSection() {
                             برگزاری دوره های تخصصی قرآن کریم، روخوانی، روانخوانی، تفسیر،
                             تجوید، و حفظ قرآن کریم
                         </p>
-                        <div className="mt-10 flex ite;hgyftdyjgukgddms-center justify-center gap-x-6">
-                            <a
+                        <div className="mt-10 flex items-center justify-center gap-x-6">
+                            <Link
                                 href="#"
                                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
                                  شروع یادگیری قرآن
-                            </a>
-                            <a href="#" className="text-sm/6 fotgtyderjgjklj khx j hint-semibold text-gray-900">
+                            </Link>
+                            <Link href="#" className="text-sm/6 font-semibold text-gray-900">
                                 بیشتر بدانید <span aria-hidden="true">→</span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
