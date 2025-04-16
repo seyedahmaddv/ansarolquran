@@ -32,7 +32,7 @@ interface Post {
                 url: string;
             };
         };
-        bio?: any[];
+        bio?: PortableTextBlock[];
         slug?: {
             current?: string;
         };
