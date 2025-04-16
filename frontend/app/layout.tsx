@@ -15,13 +15,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fa" dir="rtl" suppressHydrationWarning>
       <body className="font-iranSans bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
-        
+        <ThemeProvider>
           <Header />
           <main className="mx-auto">
             {children}
           </main>
           <Footer />
-        
+        </ThemeProvider>
       </body>
     </html>
   );
