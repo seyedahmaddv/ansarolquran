@@ -44,7 +44,7 @@ export default function Example() {
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">انصارالقرآن</span>
             <img
               alt=""
               src="https://img.freepik.com/free-vector/open-book-glyph-style_78370-7117.jpg?t=st=1744794932~exp=1744798532~hmac=bedf7e40cddf01d632f18e40c2019fdb7496ef4e05f726402e71031dc172ca02&w=996"
@@ -58,14 +58,14 @@ export default function Example() {
             onClick={() => setMobileMenuOpen(true)}
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="sr-only">باز کردن منو اصلی</span>
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
-              Product
+              دوره ها
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
             </PopoverButton>
 
@@ -108,18 +108,18 @@ export default function Example() {
           </Popover>
 
           <Link href="#" className="text-sm/6 font-semibold text-gray-900">
-            Features
+            خدمات
           </Link>
           <Link href="#" className="text-sm/6 font-semibold text-gray-900">
-            Marketplace
+            فروشگاه
           </Link>
           <Link href="#" className="text-sm/6 font-semibold text-gray-900">
-            Company
+            کلاسها
           </Link>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link href="#" className="text-sm/6 font-semibold text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+            ورود <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
       </nav>
@@ -149,7 +149,7 @@ export default function Example() {
               <div className="space-y-2 py-6">
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                    Product
+                    دوره ها
                     <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-open:rotate-180" />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
@@ -169,19 +169,19 @@ export default function Example() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  خدمات
                 </Link>
                 <Link
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Marketplace
+                  فروشگاه
                 </Link>
                 <Link
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Company
+                  درباره ما
                 </Link>
               </div>
               <div className="py-6">
@@ -189,7 +189,7 @@ export default function Example() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  ورود
                 </Link>
               </div>
             </div>
