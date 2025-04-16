@@ -23,6 +23,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import Image from 'next/image'
 
 const products = [
   { name: 'تفسیر قرآن', description: 'مطالعه و بررسی آیات قرآن با تفسیر معتبر', href: '/tafsir', icon: ChartPieIcon },
@@ -45,9 +46,11 @@ export default function Example() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">انصارالقرآن</span>
-            <img
+            <Image
               alt=""
               src="https://img.freepik.com/free-vector/open-book-glyph-style_78370-7117.jpg?t=st=1744794932~exp=1744798532~hmac=bedf7e40cddf01d632f18e40c2019fdb7496ef4e05f726402e71031dc172ca02&w=996"
+              width={800} // عرض تصویر (به پیکسل)
+              height={450} // ارتفاع تصویر
               className="h-8 w-auto"
             />
           </Link>
@@ -129,9 +132,11 @@ export default function Example() {
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
+              <Image
                 alt=""
                 src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                width={800} // عرض تصویر (به پیکسل)
+                height={450} // ارتفاع تصویر
                 className="h-8 w-auto"
               />
             </Link>

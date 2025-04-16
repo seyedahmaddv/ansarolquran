@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { client } from '../../lib/sanity';
 import { formatJalaliDate, formatHijriDate } from '../../lib/date-utils';
+import Image from 'next/image';
 
 // تعریف تایپ برای پست
 interface Post {
@@ -76,7 +77,7 @@ export default async function Blog() {
           <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">وبلاگ انصارالقرآن</h2>
           <p className="mt-2 text-lg/8 text-gray-600">مقالات و مطالب قرآنی</p>
         </div>
-        
+
         <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
             <article key={post._id} className="flex max-w-xl flex-col items-start justify-between">
@@ -87,7 +88,7 @@ export default async function Blog() {
                 <time dateTime={post.publishedAt} className="text-gray-500">
                   {formatHijriDate(post.publishedAt)}
                 </time>
-                
+
                 {post.categories && post.categories.length > 0 && post.categories[0] && (
                   <Link
                     href={`/category/${post.categories[0].slug?.current || '#'}`}
@@ -97,17 +98,19 @@ export default async function Blog() {
                   </Link>
                 )}
               </div>
-              
+
               {post.mainImage && post.mainImage.asset && (
                 <div className="relative w-full h-48 mt-4 overflow-hidden rounded-lg">
-                  <img 
-                    src={post.mainImage.asset.url} 
-                    alt={post.title} 
+                  <Image
+                    src={post.mainImage.asset.url}
+                    alt={post.title}
+                    width={800} // عرض تصویر (به پیکسل)
+                    height={450} // ارتفاع تصویر 
                     className="w-full h-full object-cover"
                   />
                 </div>
               )}
-              
+
               <div className="group relative mt-3">
                 <h3 className="text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
                   <Link href={`/blog/${post.slug.current}`}>
@@ -119,14 +122,16 @@ export default async function Blog() {
                   {post.excerpt}
                 </p>
               </div>
-              
+
               {post.author && (
                 <div className="relative mt-8 flex items-center gap-x-4">
                   {post.author.image && post.author.image.asset && (
-                    <img 
-                      src={post.author.image.asset.url} 
-                      alt={post.author.name} 
-                      className="size-10 rounded-full bg-gray-50" 
+                    <Image
+                      src={post.author.image.asset.url}
+                      alt={post.author.name}
+                      width={800} // عرض تصویر (به پیکسل)
+                      height={450} // ارتفاع تصویر
+                      className="size-10 rounded-full bg-gray-50"
                     />
                   )}
                   <div className="text-sm/6">

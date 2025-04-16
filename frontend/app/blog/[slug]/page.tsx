@@ -2,6 +2,8 @@ import { client } from '../../../lib/sanity';
 import { formatJalaliDateText } from '../../../lib/date-utils';
 import { PortableText } from '@portabletext/react';
 import Link from 'next/link';
+import { PortableTextBlock } from '@portabletext/types';
+import Image from 'next/image';
 
 interface Post {
     _id: string;
@@ -35,7 +37,7 @@ interface Post {
             current?: string;
         };
     };
-    body: any[];
+    body: PortableTextBlock[];
 }
 
 export default async function BlogPost({ params }: { params: { slug: string } }) {
@@ -93,7 +95,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 
                     <div className="mt-4 flex items-center gap-x-4 text-sm">
                         <time dateTime={post.publishedAt} className="text-gray-500 ml-2">
-                        {formatJalaliDateText(post.publishedAt)}
+                            {formatJalaliDateText(post.publishedAt)}
                         </time>
                         <div className="flex gap-2">
                             {post.categories?.map((category, index) =>
@@ -112,9 +114,11 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 
                     {post.mainImage?.asset?.url && (
                         <div className="relative w-full mt-8 overflow-hidden rounded-lg">
-                            <img
+                            <Image
                                 src={post.mainImage.asset.url}
                                 alt={post.title}
+                                width={800} // عرض تصویر (به پیکسل)
+                                height={450} // ارتفاع تصویر
                                 className="w-full h-auto object-cover"
                             />
                         </div>
@@ -128,9 +132,11 @@ export default async function BlogPost({ params }: { params: { slug: string } })
                         <div className="mt-12 pt-8 border-t border-gray-200">
                             <div className="flex items-center gap-x-4">
                                 {post.author.image?.asset?.url && (
-                                    <img
+                                    <Image
                                         src={post.author.image.asset.url}
                                         alt={post.author.name}
+                                        width={800} // عرض تصویر (به پیکسل)
+                                        height={450} // ارتفاع تصویر
                                         className="size-12 rounded-full bg-gray-50"
                                     />
                                 )}
