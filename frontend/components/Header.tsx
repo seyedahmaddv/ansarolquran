@@ -110,8 +110,8 @@ export default function Example() {
             </PopoverPanel>
           </Popover>
 
-          <Link href="#" className="text-sm/6 font-semibold text-gray-900">
-            خدمات
+          <Link href="/blog" className="text-sm/6 font-semibold text-gray-900">
+            وبلاگ
           </Link>
           <Link href="#" className="text-sm/6 font-semibold text-gray-900">
             فروشگاه

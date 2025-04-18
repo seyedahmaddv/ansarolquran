@@ -1,6 +1,10 @@
 // lib/date-utils.ts
 import moment from 'moment-jalaali';
 import 'moment-hijri';
+import 'moment/locale/fa'; // اضافه کردن لوکال فارسی برای moment
+
+// فعال کردن تقویم جلالی و تنظیم زبان فارسی
+moment.loadPersian({ dialect: 'persian-modern' });
 
 // تعریف میکنیم که moment از نوع any است تا با افزونه‌های moment کار کند
 declare module 'moment-jalaali' {
@@ -38,10 +42,20 @@ export function formatHijriDate(dateString: string): string {
   }
   
 
-// فرمت تاریخ شمسی به صورت متنی
+// // فرمت تاریخ شمسی به صورت متنی
+// export function formatJalaliDateText(dateString: string): string {
+//     const text = moment(dateString).format('dddd jD jMMMM jYYYY');
+//     return toPersianDigits(text); // تبدیل عدد به فارسی
+//   }
+
+// تعریف تابع تبدیل تاریخ به شمسی با نمایش فارسی
 export function formatJalaliDateText(dateString: string): string {
-    const text = moment(dateString).format('dddd jD jMMMM jYYYY');
-    return toPersianDigits(text); // تبدیل عدد به فارسی
+    const m = moment(dateString);
+    // تنظیم لوکال به فارسی
+    m.locale('fa');
+    // استفاده از فرمت دلخواه با نام‌های فارسی
+    const text = m.format('dddd jD jMMMM jYYYY');
+    return toPersianDigits(text);
   }
 
 // فرمت تاریخ قمری به صورت متنی
