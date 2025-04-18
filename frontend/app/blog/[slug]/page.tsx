@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { PortableTextBlock } from '@portabletext/types';
 import Image from 'next/image';
 import { portableTextComponents } from '@/components/portableTextComponents';
-import { Metadata } from 'next';
 
 interface Post {
     _id: string;
