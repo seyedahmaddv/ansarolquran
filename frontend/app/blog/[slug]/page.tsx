@@ -126,7 +126,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
                     )}
 
                     <div className="mt-8 prose prose-lg prose-indigo prose-md max-w-none text-gray-800">
-                        <PortableText value={post.body} components={portableTextComponents} />
+                        <PortableText value={post.body} />
                     </div>
 
                     {post.author && (
