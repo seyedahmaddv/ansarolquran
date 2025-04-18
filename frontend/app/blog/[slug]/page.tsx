@@ -40,8 +40,10 @@ interface Post {
     };
     body: PortableTextBlock[];
 }
-
-export default async function BlogPost({ params }: { params: { slug: string } }) {
+type PageProps = {
+    params: { slug: string }
+  }
+export default async function BlogPost({ params }: PageProps) {
     const { slug } = params;
 
     const post: Post | null = await client.fetch(
