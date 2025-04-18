@@ -40,10 +40,11 @@ interface Post {
     };
     body: PortableTextBlock[];
 }
-type PageProps = {
-    params: { slug: string }
-  }
-export default async function BlogPost({ params }: PageProps) {
+
+type Params = {
+    slug: string;
+}
+export default async function BlogPost({ params }: { params: Params }) {
     const { slug } = params;
 
     const post: Post | null = await client.fetch(
@@ -128,7 +129,7 @@ export default async function BlogPost({ params }: PageProps) {
                     )}
 
                     <div className="mt-8 prose prose-lg prose-indigo prose-md max-w-none text-gray-800">
-                    <PortableText value={post.body} components={portableTextComponents} />
+                        <PortableText value={post.body} components={portableTextComponents} />
                     </div>
 
                     {post.author && (
