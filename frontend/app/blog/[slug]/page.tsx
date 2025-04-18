@@ -4,6 +4,7 @@ import { PortableText } from '@portabletext/react';
 import Link from 'next/link';
 import { PortableTextBlock } from '@portabletext/types';
 import Image from 'next/image';
+import { portableTextComponents } from '@/components/portableTextComponents';
 
 interface Post {
     _id: string;
@@ -125,7 +126,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
                     )}
 
                     <div className="mt-8 prose prose-lg prose-indigo prose-md max-w-none text-gray-800">
-                        <PortableText value={post.body} />
+                    <PortableText value={post.body} components={portableTextComponents} />
                     </div>
 
                     {post.author && (

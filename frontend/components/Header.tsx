@@ -48,7 +48,7 @@ export default function Example() {
             <span className="sr-only">انصارالقرآن</span>
             <Image
               alt=""
-              src="https://img.freepik.com/free-vector/open-book-glyph-style_78370-7117.jpg?t=st=1744794932~exp=1744798532~hmac=bedf7e40cddf01d632f18e40c2019fdb7496ef4e05f726402e71031dc172ca02&w=996"
+              src="/images/quran_7310925.png" // تصویر مناسب خودتو جایگزین کن
               width={800} // عرض تصویر (به پیکسل)
               height={450} // ارتفاع تصویر
               className="h-8 w-auto"
