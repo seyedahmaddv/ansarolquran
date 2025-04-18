@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { PortableTextBlock } from '@portabletext/types';
 import Image from 'next/image';
 import { portableTextComponents } from '@/components/portableTextComponents';
+import { Metadata } from 'next';
 
 interface Post {
     _id: string;
@@ -41,10 +42,7 @@ interface Post {
     body: PortableTextBlock[];
 }
 
-type Params = {
-    slug: string;
-}
-export default async function BlogPost({ params }: { params: Params }) {
+export default async function BlogPost({ params }: { params: { slug: string } }) {
     const { slug } = params;
 
     const post: Post | null = await client.fetch(
