@@ -20,7 +20,8 @@
     "next": "15.3.0",
     "next-sanity": "^9.10.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "resend": "^6.1.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
